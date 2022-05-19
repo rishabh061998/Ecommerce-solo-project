@@ -9,6 +9,7 @@ import { Link,useNavigate} from 'react-router-dom';
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
+import Footer from "./Footer";
 
 
 export default function CartScreen(){
@@ -123,6 +124,7 @@ export default function CartScreen(){
             </Card>
         </Col>
     </Row>
+    <Footer/>
 </div>
    )
 }

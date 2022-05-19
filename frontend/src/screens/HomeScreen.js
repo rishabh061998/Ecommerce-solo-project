@@ -12,6 +12,7 @@ import MessageBox from "../Components/MessageBox";
 import Banner from "./Banner";
 import Footer from "./Footer";
 
+
 const reducer=(state,action)=>{
     switch(action.type){
         case 'FETCH_REQUEST':
@@ -53,7 +54,9 @@ const HomeScreen=()=>{
         <div>
             <Helmet>
                 <title>Amazon</title>
+                
             </Helmet>
+           
             <Banner/>
              <h1>Features Products</h1>
         <div className="products">

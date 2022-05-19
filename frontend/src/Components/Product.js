@@ -9,6 +9,7 @@ import axios from "axios";
 import { useContext } from "react";
 
 
+
 const Product=(props)=>{
     const {product}=props
     const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -52,8 +53,9 @@ const Product=(props)=>{
           <Button onClick={() => addToCartHandler(product)}>Add to cart</Button>
         )}
             </Card.Body>
-           
+          
           </Card>
+         
     )
 }
 
