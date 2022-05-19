@@ -27,10 +27,14 @@ flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
+  
 }
 .product{
   border: 1px #404040 solid;
   margin: 1rem;
+  
+ 
 }
 
 .product img{
