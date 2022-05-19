@@ -14,6 +14,7 @@ import LoadingBox from "../Components/LoadingBox";
 import MessageBox from "../Components/MessageBox";
 import { getError } from "../Utils";
 import { Store } from "../Store";
+import Footer from "./Footer";
 
 
 const reducer=(state,action)=>{
@@ -151,6 +152,7 @@ navigate('/cart')
                  </Card>
              </Col>
          </Row>
+         <Footer/>
      </div>
     )
 }
