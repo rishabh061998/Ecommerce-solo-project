@@ -7,6 +7,10 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Product from "../Components/Product";
 import { Helmet } from "react-helmet-async";
+import LoadingBox from "../Components/LoadingBox"
+import MessageBox from "../Components/MessageBox";
+import Banner from "./Banner";
+import Footer from "./Footer";
 
 const reducer=(state,action)=>{
     switch(action.type){
@@ -50,12 +54,17 @@ const HomeScreen=()=>{
             <Helmet>
                 <title>Amazon</title>
             </Helmet>
+            <Banner/>
              <h1>Features Products</h1>
         <div className="products">
         {
-            loading?(<div>Loading...</div>)
+            loading?(
+            <LoadingBox></LoadingBox>
+            )
             :
-            error? (<div>{error}</div>)
+            error? (
+           <MessageBox variant="danger">{error}</MessageBox>
+            )
             :(
 <Row>
 
@@ -69,6 +78,7 @@ const HomeScreen=()=>{
           </Row>
        ) }
         </div>
+        <Footer/>
         </div>
     )
 }
