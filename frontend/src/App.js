@@ -26,9 +26,10 @@ function App() {
             <Navbar.Brand>Amazon</Navbar.Brand>
             </LinkContainer>
             <div className="nav_searchbaar">
-                        <input type="text" name="" id="" placeholder="Search your Product" className='interior'></input>
+                        <input type="text" name="" id="" placeholder="Search your Product"></input>
 
             </div>
+            
            
            <Nav className="me-auto">
              <Link to="/cart" className="nav-link">

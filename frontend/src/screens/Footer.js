@@ -32,7 +32,7 @@ const Footer=()=>{
                 </div>
             </div>
             <div className="lastdetails">
-                <img src="./main_logo.jpg" alt="logo" />
+                <img src="#" alt="logo" />
                 <p>Conditions of Use & Sale &nbsp; &nbsp;&nbsp;  Privacy Notice  &nbsp; &nbsp;&nbsp; Interest-Based Ads  &nbsp; &nbsp;&nbsp;  © 1996-2022, Shopping.com, Inc. or its affiliates</p>
             </div>
         </footer>
